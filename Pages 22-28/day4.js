@@ -33,8 +33,43 @@ let zero = 0
 let three = 3
 //Javascript recognizes hexadecimal eg 
 let x = 0xBA467F
+let y = 0X83d5AD
+let z = 0x48FF39
 //Javascript recognizes binary (base 2) and octal (base 8)
 let binary = 0b101011
 let octal = 0o477
 
 //Floating-point literals
+//exponent notation: a number followed by e or E [digits][.digits][(E|e)[(+|-)]digits]
+let float = 6.02e23
+let float2 = 1.156E-15
+//break up long literals into chunks that are easier to read using underscore
+let billion = 1_000_000_000;
+
+//Arithmetic in JavaScript
+// +, -, *, /, % (remainder after division), ** (exponentation)
+//complex mathematical operations through a set of functions and constants Math object
+Math.pow(2, 53)
+Math.round(.7)
+Math.ceil(.4)
+Math.floor(.6)
+Math.abs(-10)
+Math.max(x, y, z)
+Math.min(x, y, z)
+Math.random()
+Math.PI
+Math.E
+Math.sqrt(x)
+Math.pow(y, 1/3)
+Math.sin(z)
+Math.log(10)
+Math.log(100)/Math.LN10
+Math.log(512)/Math.LN2
+Math.exp(3)
+
+//more function in ES6
+Math.cbrt(27)
+Math.hypot(3,4)
+Math.log10(100)
+Math.log2(1024)
+Math.log1p(x)
