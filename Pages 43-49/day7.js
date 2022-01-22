@@ -65,4 +65,35 @@ Number('6') //6
 String('true') //true
 Boolean([]) //true
 //certain javascript operators perform implicit type conversions and are used explicitly for the purpose of type conversion
-// + converts to a string
+// x + "" //converts to a string, one is a string
+// +x //Number(x)
+// x - 0 // Number(x)
+//!!x // Boolean(x) *double !!
+//toString() accepts a radix argument to convert to base 10 automatically
+//toString() takes argument 2, 8, 16 ...
+let num = 18;
+let binaryNum = "0b" + num.toString(2); // to binary
+let octalNum = "0o" + num.toString(8); // to octal
+let hexNum = "0x" + num.toString(16); // to hex
+//toFixed() converts a number to a string with a specified number of digits after the decimal point.
+//toExponential() converts a number to a string using exponential notation
+//toPrecision() converts a number to a string with number of specified significant digits
+let n1 = 1234567.89012345;
+n1.toFixed(0) //1234567
+n1.toFixed(2)  //1234567.89
+n1.toExponential(1) //1.2e+6
+n1.toExponential(3) //1.234+6
+n1.toPrecision(7) //1234567
+n1.toPrecision(10) //1234567.890
+//parseInt() parses only integers
+//parseFloat() parses both integers and float point numbers
+parseFloat("3.14 meters") //3.14
+parseInt("-16.89") //-16
+//parseInt() accepts a radix argument
+
+//Object to primitive conversions
+//three fundamental algorithms
+//1. prefer-string: returns a primitive value, preferring a string 
+//2. prefer-number: returns a primitive value, preferring a number
+//3. no-preference: expresses no preference about the type of primitive value
+//Date class implements prefer-string algorithm
