@@ -63,5 +63,11 @@ function hypotenuse(a, b){
 //4. Indirectly through their call() and apply() methods
 //5. Implicitly
 
-//function invocation - expression consists of a function expression that 
+//function invocation - expression consists of a function expression that evaluates to a function object followed by open parenthesis, comma separated list of zero or more arguments and close parenthesis
+//return value of the function becomes the value of the invocation expression
+//if interpreter reaches end, return value is undefined
+//if return statement is executed, return value is the value of the expression that follows the return or is undefined
+
+//conditional invocation
+// '?.' 
 
